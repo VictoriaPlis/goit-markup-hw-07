@@ -1,0 +1,102 @@
+@import "../utils/placeholders";
+@import "../utils/mixins";
+@import "../utils/variables";
+
+.advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    
+}
+
+.visually-hidden {
+    @extend %visually-hidden;
+}
+
+.container.adv-nav {
+   @extend %section1200;
+  
+
+}
+
+.adv-nav__icon {
+    @include centeredFlex();
+    width: 270px;
+    height: 120px;
+    background-color: $buttonColor;
+    margin-bottom: 30px;
+   
+    
+
+}
+.icon-antenna {
+    width: 65px;
+    height: 70px;
+    
+}
+
+.icon-clock {
+    width: 67px;
+    height: 70px;
+
+}
+
+.icon-diagram {
+    height: 70px;
+
+}
+
+.icon-astronaut{
+    height: 70px;
+
+}
+
+.adv-nav .list {
+    @include centeredFlex();
+    margin-block-start: 0em;    
+    padding-inline-start: 0px;
+    @extend %li;
+}
+
+.adv-nav .item {
+    width: 270px;
+}
+
+.adv-nav .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.adv-nav-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.list-advantages {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primaryTextColor;
+
+
+}
+
+.text-advantages {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    color: $secondaryTextColor;
+
+}
