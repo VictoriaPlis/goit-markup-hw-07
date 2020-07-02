@@ -2,7 +2,9 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-
+a {
+    color: currentColor;
+}
 
 .visually-hidden {
     @extend %visually-hidden;
@@ -14,6 +16,7 @@
 
 &-list {
     @include centeredFlex();
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     padding-inline-start: 0px;
@@ -21,13 +24,15 @@
     color: $primaryTextColor;
     margin-block-start: 0em;
     margin-block-end: 0em;
+    margin-bottom: 50px;
+    
     @extend %li;
     
 }
 
 &-btn {
     padding: 6px 22px;
-    margin-bottom: 50px;
+    
     background: #F5F4FA;
     color: $primaryTextColor;
 
@@ -44,6 +49,18 @@
       color: $whiteColor;
       background-color: $accentColor;
       
+    }
+
+    &-name {
+        @include textFont($size: 16px, $height:26px,$spacing: 0.03em);
+        font-family: Roboto;
+    text-align: center;
+    color: #212121;
+        
+    &:focus,
+    &:hover {
+        color: $accentColor;
+    }
     }
 
 }
