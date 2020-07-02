@@ -50,6 +50,7 @@ a {
       background-color: $accentColor;
       
     }
+}
 
     &-name {
         @include textFont($size: 16px, $height:26px,$spacing: 0.03em);
@@ -61,7 +62,7 @@ a {
     &:hover {
         color: $accentColor;
     }
-    }
+    
 
 }
 }

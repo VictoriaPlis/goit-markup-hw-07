@@ -648,7 +648,7 @@ a {
   background-color: #2196F3;
 }
 
-.portfolio-btn-name {
+.portfolio-name {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -661,7 +661,7 @@ a {
   color: #212121;
 }
 
-.portfolio-btn-name:focus, .portfolio-btn-name:hover {
+.portfolio-name:focus, .portfolio-name:hover {
   color: #2196F3;
 }
 
