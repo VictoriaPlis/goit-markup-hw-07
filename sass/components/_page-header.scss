@@ -104,6 +104,13 @@
         fill: $secondaryTextColor;
         @include transition();
 
+        &:focus,
+        &:hover {
+            color: $accentColor;
+            fill: $accentColor;
+            @include transition();
+        }
+
        
     }
 }
